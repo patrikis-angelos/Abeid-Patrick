@@ -36,6 +36,7 @@
   padding-right: 12px;
   padding-left: 12px;
 }
+
 @media (min-width: 992px) {
   .custom-btn {
     font-size: 16px !important;
@@ -45,7 +46,8 @@
 .custom-input {
   border: 1px solid transparent;
   outline: none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: block;
   width: 100%;
 }
@@ -53,7 +55,8 @@
 .search-input {
   top: 20%;
   right: 0;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 100px;
 }
 
@@ -68,6 +71,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 .custom-header-wrapper > * + * {
   border-left: 1px solid #d9d9d9;
 }
@@ -79,6 +83,7 @@
   line-height: 24px;
   cursor: pointer;
 }
+
 .custom-link:hover {
   text-decoration: none;
 }
@@ -86,8 +91,9 @@
 .custom-header-nav-wrapper {
   padding-right: 160px;
 }
+
 .custom-header-nav-wrapper::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -99,7 +105,7 @@
 }
 
 body {
-  font-family: "Roboto Condensed";
+  font-family: 'Roboto Condensed';
 }
 
 @media (min-width: 1325px) {
@@ -150,4 +156,8 @@ p {
   line-height: 20px;
 }
 
+.debate-card {
+  border-top: 4px solid #d9d9d9;
+  border-bottom: 4px solid #d9d9d9;
+}
 /*# sourceMappingURL=styles.css.map */
