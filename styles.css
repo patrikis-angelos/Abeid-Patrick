@@ -200,4 +200,14 @@ p {
   height: auto;
 }
 
+.signup-img {
+  width: 30px;
+  height: 30px;
+}
+
+.signup-btn {
+  border: 0;
+  width: 100%;
+}
+
 /*# sourceMappingURL=styles.css.map */
