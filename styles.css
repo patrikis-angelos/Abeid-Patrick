@@ -2,12 +2,20 @@
   background-color: #f72210;
 }
 
+.bg-custom-black {
+  background-color: black;
+}
+
 .hover\:text-primary:hover {
   color: #f72210;
 }
 
 .text-primary {
   color: #f72210;
+}
+
+.border-primary {
+  border-color: #f72210;
 }
 
 .hover\:text-graylight:hover {
@@ -18,6 +26,22 @@
   color: #807f84;
 }
 
+.border-graylight {
+  border-color: #807f84;
+}
+
+.hover\:text-gray:hover {
+  color: #d9d9d9;
+}
+
+.text-gray {
+  color: #d9d9d9;
+}
+
+.border-gray {
+  border-color: #d9d9d9;
+}
+
 .hover\:text-black:hover {
   color: black;
 }
@@ -26,8 +50,20 @@
   color: black;
 }
 
+.border-black {
+  border-color: black;
+}
+
 .hover\:text-decoration-none:hover {
   text-decoration: none;
+}
+
+.w-9 {
+  width: 36px;
+}
+
+.h-9 {
+  height: 36px;
 }
 
 .custom-btn {

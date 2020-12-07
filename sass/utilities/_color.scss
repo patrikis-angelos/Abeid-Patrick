@@ -1,6 +1,7 @@
 $colors: (
   primary: $orange,
   graylight: $graylight,
+  gray: $gray,
   black: black,
 );
 
@@ -11,5 +12,9 @@ $colors: (
 
   .text-#{$prop} {
     color: $value;
+  }
+
+  .border-#{$prop} {
+    border-color: $value;
   }
 }

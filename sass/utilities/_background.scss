@@ -1,5 +1,6 @@
 $backgrounds: (
   primary: $orange,
+  black: black,
 );
 
 @each $prop, $value in $backgrounds {
