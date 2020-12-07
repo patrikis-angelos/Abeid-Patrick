@@ -1,6 +1,7 @@
 $colors: (
   primary: $orange,
   graylight: $graylight,
+  black: black,
 );
 
 @each $prop, $value in $colors {
