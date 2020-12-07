@@ -1,0 +1,14 @@
+@import 'variables/all';
+@import 'utilities/all';
+@import 'components/all';
+
+body {
+  font-family: 'Roboto Condensed';
+}
+
+.custom-container {
+  @media (min-width: 1325px) {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,9 @@
+$backgrounds: (
+  primary: $orange,
+);
+
+@each $prop, $value in $backgrounds {
+  .bg-custom-#{$prop} {
+    background-color: $value;
+  }
+}

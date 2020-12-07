@@ -1,0 +1,9 @@
+$colors: (
+  primary: $orange,
+);
+
+@each $prop, $value in $colors {
+  .hover\:text-#{$prop}:hover {
+    color: $value;
+  }
+}

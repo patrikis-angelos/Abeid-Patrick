@@ -1,0 +1,21 @@
+.custom-input {
+  border: 1px solid transparent;
+  outline: none;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+
+.search-input {
+  top: 20%;
+  right: 0;
+  transform: translateX(-50%);
+  width: 100px;
+}
+
+.custom-search-icon {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin-right: 12px;
+}
