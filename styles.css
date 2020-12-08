@@ -82,6 +82,10 @@ a:hover {
   background-color: black;
 }
 
+.bg-custom-graylighter {
+  background-color: #f4f5f6;
+}
+
 .hover\:text-primary:hover {
   color: #f72210;
 }
