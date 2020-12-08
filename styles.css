@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto Condensed';
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 @media (min-width: 1325px) {
@@ -23,7 +23,7 @@ a:hover {
 }
 
 .card-noborder {
-  border: 0px;
+  border: 0;
 }
 
 .no-border-radius {

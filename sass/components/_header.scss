@@ -1,6 +1,7 @@
 .custom-header-wrapper {
   padding-top: 10px;
   padding-bottom: 10px;
+
   > * + * {
     border-left: 1px solid $gray;
   }
