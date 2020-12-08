@@ -1,0 +1,36 @@
+.custom-header-wrapper {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  > * + * {
+    border-left: 1px solid $gray;
+  }
+}
+
+.custom-link {
+  color: black;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.custom-header-nav-wrapper {
+  padding-right: 160px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $orange;
+    height: 12px;
+    width: 66px;
+    border-left: 12px solid white;
+    border-top: 13px solid $orange;
+  }
+}

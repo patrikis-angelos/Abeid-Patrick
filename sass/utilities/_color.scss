@@ -1,0 +1,21 @@
+$colors: (
+  primary: $orange,
+  graylight: $graylight,
+  gray: $gray,
+  'black': black,
+  orange: $orange,
+);
+
+@each $prop, $value in $colors {
+  .hover\:text-#{$prop}:hover {
+    color: $value;
+  }
+
+  .text-#{$prop} {
+    color: $value;
+  }
+
+  .border-#{$prop} {
+    border-color: $value;
+  }
+}

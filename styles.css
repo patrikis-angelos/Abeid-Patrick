@@ -1,0 +1,300 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+@media (min-width: 1325px) {
+  .custom-container {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+}
+
+hr {
+  border-color: #f4f5f7;
+}
+
+p {
+  margin: 0;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.card-noborder {
+  border: 0;
+}
+
+.no-border-radius {
+  border-radius: 0;
+}
+
+.text-lg {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+.text-xs {
+  font-size: 13px;
+}
+
+.text-base {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.debate-card {
+  border-top: 4px solid #d9d9d9;
+  border-bottom: 4px solid #d9d9d9;
+}
+
+.custom-img {
+  width: 100%;
+  height: auto;
+}
+
+.signup-img {
+  width: 30px;
+  height: 30px;
+}
+
+.signup-btn {
+  border: 0;
+  width: 100%;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 60px;
+}
+
+.left-50 {
+  left: 50%;
+}
+
+.footer-links {
+  color: #807f84;
+  padding: 0 8px;
+  margin: 4px 0;
+}
+
+.footer-links:hover {
+  color: black;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .footer-links:not(:first-of-type) {
+    border-left: 1px solid #d9d9d9;
+  }
+}
+
+.bg-custom-primary {
+  background-color: #f72210;
+}
+
+.bg-custom-black {
+  background-color: black;
+}
+
+.bg-custom-graylighter {
+  background-color: #f4f5f6;
+}
+
+.hover\:text-primary:hover {
+  color: #f72210;
+}
+
+.text-primary {
+  color: #f72210;
+}
+
+.border-primary {
+  border-color: #f72210;
+}
+
+.hover\:text-graylight:hover {
+  color: #807f84;
+}
+
+.text-graylight {
+  color: #807f84;
+}
+
+.border-graylight {
+  border-color: #807f84;
+}
+
+.hover\:text-gray:hover {
+  color: #d9d9d9;
+}
+
+.text-gray {
+  color: #d9d9d9;
+}
+
+.border-gray {
+  border-color: #d9d9d9;
+}
+
+.hover\:text-black:hover {
+  color: black;
+}
+
+.text-black {
+  color: black;
+}
+
+.border-black {
+  border-color: black;
+}
+
+.hover\:text-orange:hover {
+  color: #f72210;
+}
+
+.text-orange {
+  color: #f72210;
+}
+
+.border-orange {
+  border-color: #f72210;
+}
+
+.hover\:text-decoration-none:hover {
+  text-decoration: none;
+}
+
+.hover\:underline-primary:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #f72210;
+          text-decoration-color: #f72210;
+}
+
+.w-9 {
+  width: 36px;
+}
+
+.h-9 {
+  height: 36px;
+}
+
+.inset-bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.custom-btn {
+  font-size: small !important;
+  background-color: #ffe400 !important;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+@media (min-width: 992px) {
+  .custom-btn {
+    font-size: 16px !important;
+  }
+}
+
+.custom-input {
+  border: 1px solid transparent;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+
+.search-input {
+  top: 20%;
+  right: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100px;
+}
+
+.custom-search-icon {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin-right: 12px;
+}
+
+.custom-header-wrapper {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.custom-header-wrapper > * + * {
+  border-left: 1px solid #d9d9d9;
+}
+
+.custom-link {
+  color: black;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.custom-link:hover {
+  text-decoration: none;
+}
+
+.custom-header-nav-wrapper {
+  padding-right: 160px;
+}
+
+.custom-header-nav-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #f72210;
+  height: 12px;
+  width: 66px;
+  border-left: 12px solid white;
+  border-top: 13px solid #f72210;
+}
+
+.card-label {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2px 10px;
+  color: #f72210;
+  font-weight: bold;
+}
+
+.card-label-custom {
+  display: inline-block;
+  background-color: #f72210;
+  font-weight: bold;
+  padding: 2px 10px;
+  color: white;
+}
+
+.card-label.card-label-secondary {
+  color: #3581f4;
+}
+
+.card-label.card-label-primary {
+  background-color: #f72210;
+  color: #fff;
+}
+
+.section {
+  border-top: 1px solid #d9d9d9;
+  padding: 16px 0;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #f72210;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=styles.css.map */

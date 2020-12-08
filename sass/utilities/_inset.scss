@@ -1,0 +1,8 @@
+@mixin inset-bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.inset-bottom-left {
+  @include inset-bottom-left();
+}

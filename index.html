@@ -1,0 +1,2511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Newsweek</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="bg-light">
+    <div class="custom-container">
+      <header>
+        <nav class="navbar bg-custom-primary">
+          <div class="text-white d-flex align-items-center">
+            <div class="d-none d-lg-block">
+              <div class="font-weight-bold">
+                <i class="fas fa-cloud"></i>
+                <span>13&#176; </span>
+                <span>Athens, GR ></span>
+              </div>
+              <div class="mt-1">
+                <span>Mon, Dec 7, 2020</span>
+              </div>
+            </div>
+            <svg
+              class="d-lg-none"
+              fill="currentColor"
+              version="1.1"
+              height="20"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 396 60"
+              style="enable-background: new 0 0 395.6 60;"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  class="st0"
+                  d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="d-none d-lg-block py-4 text-white">
+            <svg
+              fill="currentColor"
+              version="1.1"
+              height="60"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 396 60"
+              style="enable-background: new 0 0 395.6 60;"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  class="st0"
+                  d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="d-flex justify-content-end align-items-center">
+            <i class="fas fa-user d-block text-light ml-3 d-md-none"></i>
+            <button
+              type="button"
+              class="d-none btn btn-link text-light font-weight-bold d-md-block"
+            >
+              LOGIN
+            </button>
+            <button type="button" class="btn rounded-pill btn-sm font-weight-bold custom-btn ml-3">
+              SUBSCRIBE >
+            </button>
+            <i class="fas fa-bars d-block text-light d-lg-none ml-3"></i>
+          </div>
+        </nav>
+        <div class="position-relative d-none d-lg-block">
+          <nav
+            class="d-flex align-items-center bg-white custom-header-nav-wrapper position-relative"
+          >
+            <div
+              class="d-flex align-items-center custom-header-wrapper justify-content-between"
+              style="width: 100%;"
+            >
+              <a href="#" class="d-block custom-link text-center flex-fill hover:text-primary">
+                U.S.
+              </a>
+              <a href="#" class="d-block custom-link text-center flex-fill hover:text-primary">
+                World
+              </a>
+              <a href="#" class="d-block custom-link text-center flex-fill hover:text-primary">
+                Business
+              </a>
+              <a href="#" class="d-block custom-link text-center flex-fill hover:text-primary">
+                Tech & Science
+              </a>
+              <a href="#" class="d-block custom-link text-center flex-fill hover:text-primary">
+                Culture
+              </a>
+              <a href="#" class="d-block custom-link text-center flex-fill hover:text-primary">
+                Newsgeek
+              </a>
+              <a href="#" class="d-block custom-link text-center flex-fill hover:text-primary">
+                Sports
+              </a>
+              <a href="#" class="d-block custom-link text-center flex-fill hover:text-primary">
+                Health
+              </a>
+              <a href="#" class="d-block custom-link text-center flex-fill hover:text-primary">
+                The Debate</a
+              >
+              <a href="#" class="d-block custom-link text-center flex-fill hover:text-primary">
+                Vantage
+              </a>
+              <a href="#" class="d-block custom-link text-center flex-fill hover:text-primary">
+                Weather
+              </a>
+            </div>
+            <div class="position-absolute search-input">
+              <div class="position-relative">
+                <input placeholder="Search" class="custom-input" />
+                <div class="position-absolute d-flex align-items-center custom-search-icon">
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <hr class="m-0" />
+          <nav class="bg-white py-3 px-4">
+            <span class="text-uppercase font-weight-bold">trending</span>
+            <a
+              class="text-uppercase font-weight-bold text-graylight hover:text-decoration-none hover:text-primary ml-4"
+              href="#"
+              >joe biden</a
+            >
+            <a
+              class="text-uppercase font-weight-bold text-graylight hover:text-decoration-none hover:text-primary ml-4"
+              href="#"
+              >donald trump</a
+            >
+            <a
+              class="text-uppercase font-weight-bold text-graylight hover:text-decoration-none hover:text-primary ml-4"
+              href="#"
+              >2020 elections</a
+            >
+            <a
+              class="text-uppercase font-weight-bold text-graylight hover:text-decoration-none hover:text-primary ml-4"
+              href="#"
+              >coronavirus</a
+            >
+            <a
+              class="text-uppercase font-weight-bold text-graylight hover:text-decoration-none hover:text-primary ml-4"
+              href="#"
+              >stimulus package</a
+            >
+          </nav>
+          <hr class="m-0" />
+        </div>
+      </header>
+      <main class="bg-white px-3">
+        <div class="row">
+          <!--Trending section-->
+          <div class="row col-12 col-lg-9 no-gutters p-0">
+            <div class="col-12 col-md-5 order-1 order-md-0">
+              <!--First Column-->
+              <div class="sticky">
+                <div class="bg-white p-3 mt-4 mt-md-0">
+                  <!--Featured Stories-->
+                  <span class="d-block text-uppercase text-graylight font-weight-bold mb-2"
+                    >featured stories</span
+                  >
+                  <div class="card card-noborder">
+                    <!--Feature story 1-->
+                    <div class="position-relative">
+                      <img
+                        src="https://d.newsweek.com/en/full/1680583/giuliani-appears-before-michigan-house.jpg?w=397&h=265&q=90&f=17e2c3c6f5377adaa552b23affddfc74"
+                        class="card-img-top no-border-radius"
+                        alt="..."
+                      />
+                      <div class="position-absolute card-label inset-bottom-left">
+                        <span class="text-uppercase">
+                          news
+                        </span>
+                      </div>
+                    </div>
+                    <div class="card-body px-0 pb-0">
+                      <a class="hover:underline-primary text-black" href="#"
+                        ><p class="card-text text-lg mb-0">
+                          Giuliani Tests Positive for COVID, Appeared Maskless at Election Hearings
+                        </p></a
+                      >
+                      <p class="text-xs mt-1">
+                        Georgia Democratic Senate candidate Jon Ossoff asked the empty podium—which
+                        moderator Russ Spencer introduced as Republican Senator David Perdue—several
+                        questions, and then answered them himself.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card card-noborder mt-4">
+                    <!--Feature story 2-->
+                    <div class="position-relative">
+                      <img
+                        src="https://d.newsweek.com/en/full/1682044/anthony-fauci-coronavirus.jpg?w=397&h=265&l=41&t=47&q=90&f=78e9102ab15c8d8943645220efadfaca"
+                        class="card-img-top no-border-radius"
+                        alt="..."
+                      />
+                      <div class="position-absolute card-label inset-bottom-left">
+                        <span class="text-uppercase">
+                          u.s.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="card-body px-0 pb-0">
+                      <a class="hover:underline-primary text-black" href="#"
+                        ><p class="card-text text-lg mb-0">
+                          Fauci Not Surprised America's Seeing 200,000 New Cases of Coronavirus a
+                          Day
+                        </p></a
+                      >
+                      <p class="text-xs mt-2 border-bottom">
+                        In June, Fauci said it was possible America could reach 100,000 cases a day,
+                        but he called America doubling that amount "predictable."
+                      </p>
+                    </div>
+                    <div class="py-2 border-bottom">
+                      <a class="hover:underline-primary text-black" href="#">
+                        <p class="text-base">
+                          'How Many People Did Rudy Giuliani Infect?' Twitter Reacts to Trump
+                          Lawyer's COVID Diagnosis
+                        </p>
+                      </a>
+                    </div>
+                    <div class="py-2 border-bottom">
+                      <a class="hover:underline-primary text-black" href="#">
+                        <p class="text-base">
+                          'How Many People Did Rudy Giuliani Infect?' Twitter Reacts to Trump
+                          Lawyer's COVID Diagnosis
+                        </p>
+                      </a>
+                    </div>
+                    <div class="py-2">
+                      <a class="hover:underline-primary text-black" href="#">
+                        <p class="text-base">
+                          'How Many People Did Rudy Giuliani Infect?' Twitter Reacts to Trump
+                          Lawyer's COVID Diagnosis
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card card-noborder mt-4">
+                    <!--Feature story 3-->
+                    <div class="position-relative">
+                      <img
+                        src="https://d.newsweek.com/en/full/1681919/joe-biden-covid-inauguration-pandemic-fauci.jpg?w=397&h=265&q=90&f=c167d3a30e463dc797eaeb6a19e26e58"
+                        class="card-img-top no-border-radius"
+                        alt="..."
+                      />
+                      <div class="position-absolute card-label inset-bottom-left">
+                        <span class="text-uppercase">
+                          politics
+                        </span>
+                      </div>
+                    </div>
+                    <div class="card-body px-0 pb-0">
+                      <a class="hover:underline-primary text-black" href="#"
+                        ><p class="card-text text-lg mb-0">
+                          Biden Faces Inauguration During Worst of America's COVID Pandemic
+                        </p></a
+                      >
+                      <p class="text-xs mt-2">
+                        U.S. COVID-19 numbers are getting worse by the week and total deaths are
+                        projected to surpass 300,000 by the end of December before President-elect
+                        Joe Biden takes office.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card card-noborder mt-4">
+                    <!--Feature story 4-->
+                    <div class="position-relative">
+                      <img
+                        src="https://d.newsweek.com/en/full/1681759/covid-19-funeral-new-mexico-december-2020.jpg?w=397&h=265&q=90&f=9fffa1e5b29f0cccbf51dd87c6529bc2"
+                        class="card-img-top no-border-radius"
+                        alt="..."
+                      />
+                      <div class="position-absolute card-label inset-bottom-left">
+                        <span class="text-uppercase">
+                          news
+                        </span>
+                      </div>
+                    </div>
+                    <div class="card-body px-0 pb-0">
+                      <a class="hover:underline-primary text-black" href="#"
+                        ><p class="card-text text-lg mb-0">
+                          More Americans Could Die of COVID Today than Were Killed at Pearl Harbor
+                        </p></a
+                      >
+                      <p class="text-xs mt-2">
+                        Up to 19,500 new COVID-19 deaths are likely to be reported in the week
+                        ending December 26, according to forecasts received by the U.S. Centers for
+                        Disease Control and Prevention.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card card-noborder mt-4">
+                    <!--Feature story 5-->
+                    <div class="position-relative">
+                      <img
+                        src="https://d.newsweek.com/en/full/1681708/rudy-giuliani-covid-19-donald-trump-lawyer.jpg?w=397&h=265&q=90&f=91e09f35a80e92d4bfee8f5e7c74f2eb"
+                        class="card-img-top no-border-radius"
+                        alt="..."
+                      />
+                      <div class="position-absolute card-label inset-bottom-left">
+                        <span class="text-uppercase">
+                          politics
+                        </span>
+                      </div>
+                    </div>
+                    <div class="card-body px-0 pb-0">
+                      <a class="hover:underline-primary text-black" href="#"
+                        ><p class="card-text text-lg mb-0">
+                          Team Trump Tries to Play Down Fears Giuliani Exposed Hundreds to COVID-19
+                        </p></a
+                      >
+                      <p class="text-xs mt-2">
+                        President Donald Trump's lawyer is infected with COVID-19 and reportedly in
+                        hospital after traveling to several states and meeting with lawmakers about
+                        the 2020 election.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-white p-3 mt-4 mt-md-0">
+                  <!--Sponsored List-->
+                  <div class="card mb-5">
+                    <!--Sponsore 1-->
+                    <div class="position-relative">
+                      <img
+                        src="https://d.newsweek.com/en/full/1662167/george-mason-university-school-education.jpg?w=500&h=333&f=409b75f5ed8255cf52ce3f205d80cb3c"
+                        class="card-img-top no-border-radius"
+                        alt="..."
+                      />
+                      <div
+                        class="position-absolute card-label card-label-secondary inset-bottom-left"
+                      >
+                        <span class="text-uppercase">
+                          sponsored insight
+                        </span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <a class="hover:underline-primary text-black" href="#"
+                        ><p class="card-text text-lg mb-0">
+                          Would You Like a Career That Will Make a Real Difference?
+                        </p></a
+                      >
+                      <p class="text-xs mt-1">
+                        Stop thinking about being a teacher and get started on your path to one of
+                        the most rewarding careers in the world. Find out where to get qualified.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card my-5">
+                    <!--Sponsore 2-->
+                    <div class="position-relative">
+                      <img
+                        src="https://d.newsweek.com/en/full/1664734/corvinus-university-budapest.jpg?w=500&h=333&f=e9701eaf37429abd46c646d3193e585c"
+                        class="card-img-top no-border-radius"
+                        alt="..."
+                      />
+                      <div
+                        class="position-absolute card-label card-label-secondary inset-bottom-left"
+                      >
+                        <span class="text-uppercase">
+                          sponsored insight
+                        </span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <a class="hover:underline-primary text-black" href="#"
+                        ><p class="card-text text-lg mb-0">
+                          Why is an EQUIS Accreditation Important for a Business School?
+                        </p></a
+                      >
+                      <p class="text-xs mt-1">
+                        With over 15,000 business schools worldwide, it is increasingly difficult
+                        for prospective students, executives, corporate partners and other
+                        stakeholders to recognize a quality institution. That’s where an EQUIS
+                        Accreditation comes in. Find out more.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card my-5">
+                    <!--Sponsore 3-->
+                    <div class="position-relative">
+                      <img
+                        src="https://d.newsweek.com/en/full/1662010/tufts-university.jpg?w=500&h=333&f=ca2fa5ecc4673ce5d82f3dc946bcd420"
+                        class="card-img-top no-border-radius"
+                        alt="..."
+                      />
+                      <div
+                        class="position-absolute card-label card-label-secondary inset-bottom-left"
+                      >
+                        <span class="text-uppercase">
+                          sponsored insight
+                        </span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <a class="hover:underline-primary text-black" href="#"
+                        ><p class="card-text text-lg mb-0">
+                          Which Schools Have the Best Healthcare Programs?
+                        </p></a
+                      >
+                      <p class="text-xs mt-1">
+                        If you are thinking about a career in Healthcare, you will want to start
+                        with the best qualifications from the top schools. Which ones are at the
+                        cutting edge?
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card my-5">
+                    <!--Sponsore 4-->
+                    <div class="position-relative">
+                      <img
+                        src="https://d.newsweek.com/en/full/1680316/americas-most-responsible-companies-2021.png?w=500&h=333&f=ae10b886f06d2f293296bc4d2f90dda0"
+                        class="card-img-top no-border-radius"
+                        alt="..."
+                      />
+                      <div
+                        class="position-absolute card-label card-label-secondary inset-bottom-left"
+                      >
+                        <span class="text-uppercase">
+                          rankings
+                        </span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <a class="hover:underline-primary text-black" href="#"
+                        ><p class="card-text text-lg mb-0">
+                          America's Most Responsible Companies 2021
+                        </p></a
+                      >
+                      <p class="text-xs mt-1">
+                        We partnered with Statista to rank the country's Most Responsible Companies.
+                        They share the values that we all prioritize, and that's worth recognizing
+                        in 2021
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card my-5">
+                    <!--Sponsore 5-->
+                    <div class="position-relative">
+                      <img
+                        src="https://d.newsweek.com/en/full/1666606/best-stem-2021.png?w=500&h=333&f=880298d0d01b4e21f850884f426ebeba"
+                        class="card-img-top no-border-radius"
+                        alt="..."
+                      />
+                      <div
+                        class="position-absolute card-label card-label-secondary inset-bottom-left"
+                      >
+                        <span class="text-uppercase">
+                          stem
+                        </span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <a class="hover:underline-primary text-black" href="#"
+                        ><p class="card-text text-lg mb-0">
+                          Best in STEM 2021
+                        </p></a
+                      >
+                      <p class="text-xs mt-1">
+                        Meet the toymakers and brands who are lending a helping hand to science,
+                        technology, engineering and math (STEM) education.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card my-5">
+                    <!--Sponsore 6-->
+                    <div class="position-relative">
+                      <img
+                        src="https://d.newsweek.com/en/full/1648617/americas-best-banks-2021.png?w=500&h=333&f=74c82cc715af044c22cf4532a60c043f"
+                        class="card-img-top no-border-radius"
+                        alt="..."
+                      />
+                      <div
+                        class="position-absolute card-label card-label-secondary inset-bottom-left"
+                      >
+                        <span class="text-uppercase">
+                          rankings
+                        </span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <a class="hover:underline-primary text-black" href="#"
+                        ><p class="card-text text-lg mb-0">
+                          America's Best Banks 2021
+                        </p></a
+                      >
+                      <p class="text-xs mt-1">
+                        Introducing Newsweek's first ranking of the financial institutions that best
+                        serve their customers' needs in today's challenging times.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card my-5">
+                    <!--Sponsore 7-->
+                    <div class="position-relative">
+                      <img
+                        src="https://d.newsweek.com/en/full/1641228/worlds-best-specialized-hospitals-2021.png?w=500&h=333&f=78fc1236f2add4e7e946c17e20a9b978"
+                        class="card-img-top no-border-radius"
+                        alt="..."
+                      />
+                      <div
+                        class="position-absolute card-label card-label-secondary inset-bottom-left"
+                      >
+                        <span class="text-uppercase">
+                          rankings
+                        </span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <a class="hover:underline-primary text-black" href="#"
+                        ><p class="card-text text-lg mb-0">
+                          World's Best Specialized Hospitals 2021
+                        </p></a
+                      >
+                      <p class="text-xs mt-1">
+                        In the first part of this special, we rank the best hospitals in cardiology,
+                        oncology and endocrinology.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card my-5">
+                    <!--Sponsore 8-->
+                    <div class="position-relative">
+                      <img
+                        src="https://d.newsweek.com/en/full/1630878/best-online-shops-2021.png?w=500&h=333&f=46c7b25c74ea86488ef5b9c837c4f393"
+                        class="card-img-top no-border-radius"
+                        alt="..."
+                      />
+                      <div
+                        class="position-absolute card-label card-label-secondary inset-bottom-left"
+                      >
+                        <span class="text-uppercase">
+                          rankings
+                        </span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <a class="hover:underline-primary text-black" href="#"
+                        ><p class="card-text text-lg mb-0">
+                          Best Online Shops 2021
+                        </p></a
+                      >
+                      <p class="text-xs mt-1">
+                        Newsweek and Statista are recognizing 1,000 shops across 39 categories in
+                        eight groups.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-7 p-3">
+              <!--Main Column-->
+              <div class="sticky">
+                <div class="bg-white border-bottom">
+                  <!--Top story-->
+                  <span class="d-block text-uppercase text-graylight font-weight-bold mb-2"
+                    >top story</span
+                  >
+                  <div class="card card-noborder">
+                    <div class="position-relative">
+                      <img
+                        src="https://d.newsweek.com/en/full/1681653/kelly-loeffler-debates-raphael-warnock-georgia.png?w=591&h=364&f=cd78933e0e4ccac2f9b1c509b6d0b0dd"
+                        class="card-img-top no-border-radius"
+                        alt="..."
+                      />
+                      <div class="position-absolute card-label inset-bottom-left">
+                        <span class="text-uppercase">
+                          politics
+                        </span>
+                      </div>
+                    </div>
+                    <div class="card-body px-0 pb-0">
+                      <a class="hover:underline-primary text-black" href="#"
+                        ><p class="card-text text-lg mb-0">
+                          Loeffler Declines to Defend Her Ally Governor Kemp From Trump's Attacks
+                        </p></a
+                      >
+                      <p class="text-xs mt-2 border-bottom">
+                        Moderators asked the incumbent Georgia Republican senator if she supported
+                        Trump's attacks on Kemp three separate times during Sunday's debate.
+                      </p>
+                    </div>
+                    <div class="mt-3">
+                      <img
+                        class="float-left mr-3"
+                        src="https://d.newsweek.com/en/full/1681652/kelly-loeffler-debates-raphael-warnock-georgia.png?w=95&h=95&f=e345671ded889a3bca52266f4da38611"
+                        alt="."
+                      />
+                      <a class="hover:underline-primary text-black" href="#">
+                        <p class="text-base">
+                          Loeffler Dodges Question on Election Rigging as Ossoff Debates Empty Room
+                        </p>
+                      </a>
+                      <p class="text-xs mt-1">
+                        Georgia Democratic Senate candidate Jon Ossoff asked the empty podium—which
+                        moderator Russ Spencer introduced as Republican Senator David Perdue—several
+                        questions, and then answered them himself.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <!--My turn-->
+                  <div>
+                    <span class="d-block text-uppercase mb-2"
+                      ><a
+                        class="hover:underline-primary text-graylight hover:text-graylight font-weight-bold"
+                        href="#"
+                        >my turn</a
+                      ></span
+                    >
+                    <div class="row">
+                      <div class="mb-4 col-md-4">
+                        <img
+                          class="d-block mb-3 custom-img"
+                          src="https://d.newsweek.com/en/full/1681275/coronavirus-pandemic-mini-stroke-hospitals.jpg?w=397&h=397&f=ece665acb6b840a4ad0d35977b20dfa7"
+                          alt="."
+                        />
+                        <a
+                          class="hover:underline-primary text-graylight hover:text-graylight font-weight-bold"
+                          href="#"
+                          >'I'm 23, I had a mini Stroke days After Contracting COVID'</a
+                        >
+                      </div>
+                      <div class="mb-4 col-md-4">
+                        <img
+                          class="d-block mb-3 custom-img"
+                          src="https://d.newsweek.com/en/full/1680326/infant-infant-spasms-medical-emergency-baby.png?w=397&h=397&f=74cebbfc50e69c2f9c4835872defed74"
+                          alt="."
+                        />
+                        <a
+                          class="hover:underline-primary text-graylight hover:text-graylight font-weight-bold"
+                          href="#"
+                          >'My Baby Had a Medical Emergency During COVID'</a
+                        >
+                      </div>
+                      <div class="mb-4 col-md-4">
+                        <img
+                          class="d-block mb-3 custom-img"
+                          src="https://d.newsweek.com/en/full/1680598/genius-gifted-child-black-gifted-child.png?w=397&h=397&f=adf39e37173b5b5fdf35fc63cae274a0"
+                          alt="."
+                        />
+                        <a
+                          class="hover:underline-primary text-graylight hover:text-graylight font-weight-bold"
+                          href="#"
+                          >'I'm 12. Next Year I'm Studying Aerospace Engineering at University'</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <span class="d-block text-uppercase mb-2"
+                      ><a
+                        class="hover:underline-primary text-graylight hover:text-graylight font-weight-bold"
+                        href="#"
+                        >culture & travel</a
+                      ></span
+                    >
+                    <div class="row">
+                      <div class="mb-4 col-md-4">
+                        <img
+                          class="d-block mb-3 custom-img"
+                          src="https://d.newsweek.com/en/full/1640602/36-dominican-republic.jpg?w=397&h=397&f=365c7709609c603fc1b938755877a443"
+                          alt="."
+                        />
+                        <a
+                          class="hover:underline-primary text-graylight hover:text-graylight font-weight-bold"
+                          href="#"
+                          >These Countries Are the Most Dependent on Tourism</a
+                        >
+                      </div>
+                      <div class="mb-4 col-md-4">
+                        <img
+                          class="d-block mb-3 custom-img"
+                          src="https://d.newsweek.com/en/full/1637742/100-best-rock-albums-all-time.png?w=397&h=397&f=5f1c21a471dc42bcd8301bff02f64462"
+                          alt="."
+                        />
+                        <a
+                          class="hover:underline-primary text-graylight hover:text-graylight font-weight-bold"
+                          href="#"
+                          >100 Best Rock Albums of All Time</a
+                        >
+                      </div>
+                      <div class="mb-4 col-md-4">
+                        <img
+                          class="d-block mb-3 custom-img"
+                          src="https://d.newsweek.com/en/full/1679479/socks-clinton.jpg?w=397&h=397&f=f79ad69cfe20e95d75edcd4a9f8f7e6f"
+                          alt="."
+                        />
+                        <a
+                          class="hover:underline-primary text-graylight hover:text-graylight font-weight-bold"
+                          href="#"
+                          >A Look Back at All the Cats in the White House</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <!--More Stories-->
+                  <span class="d-block text-uppercase text-graylight font-weight-bold mb-2"
+                    >more stories</span
+                  >
+                  <div class="clearfix mt-3 py-3 border-top">
+                    <!--Storie 1-->
+                    <img
+                      class="d-block float-left mr-3"
+                      src="https://d.newsweek.com/en/full/1681801/minnesota-covid-19-lockdown-protest-december-2020.jpg?w=95&h=95&f=57472e2466a371a731568f17a1daa485"
+                      alt="."
+                    />
+                    <a class="hover:underline-primary text-black" href="#">
+                      <p class="text-base">
+                        Average Daily COVID Cases Are Highest in These 4 States
+                      </p>
+                    </a>
+                    <p class="text-xs mt-1">
+                      Daily infections are projected to hit over a million by January 10 if "vaccine
+                      distribution is scaled up over 90 days" and "governments do not re-impose
+                      mandates if cases increase," according to the Institute for Health Metrics and
+                      Evaluation.
+                    </p>
+                  </div>
+                  <div class="clearfix mt-3 py-3 border-top">
+                    <!--Storie 2-->
+                    <img
+                      class="float-left mr-3"
+                      src="https://d.newsweek.com/en/full/1681879/brandon-bernard.jpg?w=95&h=95&f=1c656e5df58d020d99236652e718f29e"
+                      alt="."
+                    />
+                    <a class="hover:underline-primary text-black" href="#">
+                      <p class="text-base">
+                        Brandon Bernard to Be Executed, Jurors Urge Trump to Commute Sentence
+                      </p>
+                    </a>
+                    <p class="text-xs mt-1">
+                      Bernard was 18 when he was convicted over the 1999 kidnapping and murder of
+                      youth ministers Todd and Stacie Bagley at Fort Hood in Texas.
+                    </p>
+                  </div>
+                  <div class="clearfix mt-3 py-3 border-top">
+                    <!--Storie 3-->
+                    <img
+                      class="float-left mr-3"
+                      src="https://d.newsweek.com/en/full/1681848/david-perdue.jpg?w=95&h=95&f=89caa6adf543a62647783fec368340e8"
+                      alt="."
+                    />
+                    <a class="hover:underline-primary text-black" href="#">
+                      <p class="text-base">
+                        David Perdue's Empty Podium at Georgia Debate Prompts Flurry of Memes
+                      </p>
+                    </a>
+                    <p class="text-xs mt-1">
+                      Ossoff led the wave of jokes on Twitter, sharing an image of him gesturing to
+                      an empty podium, captioned with a chicken emoji.
+                    </p>
+                  </div>
+                  <div class="clearfix mt-3 py-3 border-top">
+                    <!--Storie 4-->
+                    <img
+                      class="float-left mr-3"
+                      src="https://d.newsweek.com/en/full/1682106/new-york-city-covid-19-indoor-dining.jpg?w=95&h=95&f=b0a4ecfed01e38c62596abc05c651c2e"
+                      alt="."
+                    />
+                    <a class="hover:underline-primary text-black" href="#">
+                      <p class="text-base">
+                        Indoor Dining Will Close Again in NYC Unless COVID Hospitalizations Improve
+                      </p>
+                    </a>
+                    <p class="text-xs mt-1">
+                      Officials will monitor hospitalization numbers in all New York state regions
+                      over the next five days and implement restrictions in areas where rates do not
+                      stabilize.
+                    </p>
+                  </div>
+                  <div class="clearfix mt-3 py-3 border-top">
+                    <!--Storie 5-->
+                    <img
+                      class="float-left mr-3"
+                      src="https://d.newsweek.com/en/full/1681803/los-angeles.jpg?w=95&h=95&f=4928c03d73cf9d11295001a6ae841c21"
+                      alt="."
+                    />
+                    <a class="hover:underline-primary text-black" href="#">
+                      <p class="text-base">
+                        LAPD Strike Lockdown Protesters with Batons Outside Mayor Garcetti's House
+                      </p>
+                    </a>
+                    <p class="text-xs mt-1">
+                      Footage shows LAPD officers in riot gear using batons to try and push back
+                      protesters during the 13th day of demonstrations outside Mayor Eric Garcetti's
+                      house.
+                    </p>
+                  </div>
+                  <div class="clearfix mt-3 py-3 border-top">
+                    <!--Storie 6-->
+                    <img
+                      class="float-left mr-3"
+                      src="https://d.newsweek.com/en/full/1681705/dr-jane-m-orient.png?w=95&h=95&f=1ab2ffa017f687e30ff91f008e388668"
+                      alt="."
+                    />
+                    <a class="hover:underline-primary text-black" href="#">
+                      <p class="text-base">
+                        Doctor Against Mandatory Vaccinations to Testify Before Senate
+                      </p>
+                    </a>
+                    <p class="text-xs mt-1">
+                      Dr Jane M. Orient has been vocal in her criticism over coronavirus vaccines,
+                      instead opting to promote "medical freedom" and the anti-malaria drug
+                      hydroxychloroquine as an alternative treatment.
+                    </p>
+                  </div>
+                  <div class="clearfix mt-3 py-3 border-top">
+                    <!--Storie 7-->
+                    <img
+                      class="float-left mr-3"
+                      src="https://d.newsweek.com/en/full/1682090/taiwan-health-virus-people-take-photos-rooms.jpg?w=95&h=95&f=fa41981103187612f07787330c3ee474"
+                      alt="."
+                    />
+                    <a class="hover:underline-primary text-black" href="#">
+                      <p class="text-base">
+                        Migrant Worker Fined $3,500 for Breaking Quarantine
+                      </p>
+                    </a>
+                    <p class="text-xs mt-1">
+                      The worker, who came to Taiwan from the Philippines, reportedly stepped out of
+                      his hotel room in Kaohsiung City to give something to a friend next door.
+                    </p>
+                  </div>
+                  <div class="clearfix mt-3 py-3 border-top">
+                    <!--Storie 8-->
+                    <img
+                      class="float-left mr-3"
+                      src="https://d.newsweek.com/en/full/1681644/rudy-giuliani-michigan-hearing.jpg?w=95&h=95&f=e58c6acf228b10a0a643e795136542e5"
+                      alt="."
+                    />
+                    <a class="hover:underline-primary text-black" href="#">
+                      <p class="text-base">
+                        Giuliani Asked Hearing Witness to Remove Mask Days Before Testing Positive
+                      </p>
+                    </a>
+                    <p class="text-xs mt-1">
+                      President Trump's attorney has previously been criticized for publicly
+                      spreading false claims about the coronavirus and attending events without a
+                      mask.
+                    </p>
+                  </div>
+                  <div class="clearfix mt-3 py-3 border-top">
+                    <!--Storie 9-->
+                    <img
+                      class="float-left mr-3"
+                      src="https://d.newsweek.com/en/full/1681630/fox-news-sunday-chris-wallace.png?w=95&h=95&f=b1592b970beef9ad0823027efb6f1d8b"
+                      alt="."
+                    />
+                    <a class="hover:underline-primary text-black" href="#">
+                      <p class="text-base">
+                        Fox News Host Confronts HHS Secretary Over Trump's COVID Response
+                      </p>
+                    </a>
+                    <p class="text-xs mt-1">
+                      Trump "didn't wear a mask in public for three months until July," Chris
+                      Wallace said, criticizing the president while interviewing Secretary of Health
+                      and Human Services Alex Azar.
+                    </p>
+                  </div>
+                  <div class="clearfix mt-3 py-3 border-top">
+                    <!--Storie 10-->
+                    <img
+                      class="float-left mr-3"
+                      src="https://d.newsweek.com/en/full/1682068/matthew-mcconaughey.jpg?w=95&h=95&f=ea632451972b05425c949fab25bde743"
+                      alt="."
+                    />
+                    <a class="hover:underline-primary text-black" href="#">
+                      <p class="text-base">
+                        What Matthew McConaughey Said About the 'Illiberal Left'
+                      </p>
+                    </a>
+                    <p class="text-xs mt-1">
+                      The Oscar-winning actor advocated for "aggressive centrism" in a recent
+                      podcast with Russell Brand.
+                    </p>
+                  </div>
+                  <div class="clearfix mt-3 py-3 border-top">
+                    <!--Storie 11-->
+                    <img
+                      class="float-left mr-3"
+                      src="https://d.newsweek.com/en/full/1681632/president-trump-makes-statement-vaccine-development.jpg?w=95&h=95&f=ddd1017aec88111ad85ad7ccfb3ea961"
+                      alt="."
+                    />
+                    <a class="hover:underline-primary text-black" href="#">
+                      <p class="text-base">
+                        Trump's Vaccine Chief Calls Biden's 100-Day Mask Plan 'a Good Idea'
+                      </p>
+                    </a>
+                    <p class="text-xs mt-1">
+                      "This pandemic is ravaging the country. We need to take out precautions, wear
+                      our masks, wash our hands, keep our distance, remain aware that this virus is
+                      a killer," said Moncef Slaoui.
+                    </p>
+                  </div>
+                  <div class="clearfix mt-3 py-3 border-top">
+                    <!--Storie 12-->
+                    <img
+                      class="float-left mr-3"
+                      src="https://d.newsweek.com/en/full/1681586/california-governor-gavin-newsom.jpg?w=95&h=95&f=f91a02805f789d2ca55a0b9cb8d46850"
+                      alt="."
+                    />
+                    <a class="hover:underline-primary text-black" href="#">
+                      <p class="text-base">
+                        California Stay-at-Home Orders 'A Matter of Personal Responsibility'
+                      </p>
+                    </a>
+                    <p class="text-xs mt-1">
+                      Orange County Sheriff Don Barnes said: "To put the onus on law enforcement to
+                      enforce these orders against ... while at the same time ... taking away tools
+                      to do our jobs, is both contradictory and disingenuous."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-3 mt-4 mt-md-0 border-bottom col-12 col-lg-3">
+            <!--Debate Column-->
+            <div class="sticky">
+              <span class="d-block text-uppercase text-graylight font-weight-bold mb-2"
+                >the debate</span
+              >
+              <div class="debate-card">
+                <!--The debate-->
+                <div class="d-flex align-items-center pt-3 pb-1">
+                  <div>
+                    <img
+                      src="https://d.newsweek.com/en/full/1591836/jonathan-tobin.png?w=63&h=63&f=3de733b09b3c97b87933e4368ae4e559"
+                      alt=""
+                    />
+                  </div>
+                  <div class="ml-3">
+                    <a href="#" class="text-base text-black hover:underline-primary"
+                      >Should Trump concede? Yes</a
+                    >
+                    <p class="text-uppercase text-muted text-xs">
+                      By
+                      <a href="#" class="text-secondary hover:underline-primary font-weight-bold"
+                        >Jonathan Tobin</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <hr class="flex-fill border-gray" />
+                  <div
+                    class="text-uppercase rounded-pill bg-custom-black text-white d-flex align-items-center justify-content-center w-9 h-9"
+                  >
+                    vs
+                  </div>
+                  <hr class="flex-fill border-gray" />
+                </div>
+                <div class="d-flex align-items-center pt-1 pb-3 justify-content-between">
+                  <div class="mr-3">
+                    <a href="#" class="text-base text-black hover:underline-primary"
+                      >Should Trump Concede? Not Yet</a
+                    >
+                    <p class="text-uppercase text-muted text-xs">
+                      By <span class="text-secondary font-weight-bold">spencer klavan</span>
+                    </p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://d.newsweek.com/en/full/1611078/spencer-klavan.png?w=63&h=63&f=50a9e9cc8ef45fd2d3ac21f96eb0bd9f"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <!--Opinions-->
+                <div class="border-bottom">
+                  <!--Opinion card-->
+
+                  <div class="d-flex align-items-center py-3 border-bottom">
+                    <!--Opinion1-->
+                    <div>
+                      <img
+                        src="https://d.newsweek.com/en/full/97976/robert-reich.png?w=63&h=63&f=297351a03eaa549128026042394c9580"
+                        alt="."
+                      />
+                    </div>
+                    <div class="ml-3">
+                      <a href="#" class="text-base text-black hover:underline-primary"
+                        >Biden Says He'll Take on Structural Inequality. You Need to Hold Him to
+                        It</a
+                      >
+                      <p class="text-uppercase text-muted text-xs">
+                        By <span class="text-secondary font-weight-bold">ROBERT REICH</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-center py-3 border-bottom">
+                  <!--Opinion2-->
+                  <div>
+                    <img
+                      src="https://d.newsweek.com/en/full/1682120/colin-clarke.png?w=63&h=63&f=b3744427195cb4cda3629c558bdd4212"
+                      alt="."
+                    />
+                  </div>
+                  <div class="ml-3">
+                    <a href="#" class="text-base text-black hover:underline-primary"
+                      >Reports of Al-Qaeda's Demise are Greatly Exaggerated</a
+                    >
+                    <p class="text-uppercase text-muted text-xs">
+                      By <span class="text-secondary font-weight-bold">COLIN P. CLARKE</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-center py-3 border-bottom">
+                  <!--Opinion3-->
+                  <div>
+                    <img
+                      src="https://d.newsweek.com/en/full/1595774/gordon-chang.png?w=63&h=63&f=e6ac7c2e3f20ff658db6088a2c2ebef7"
+                      alt="."
+                    />
+                  </div>
+                  <div class="ml-3">
+                    <a href="#" class="text-base text-black hover:underline-primary"
+                      >Is the U.S. Justice Department Surrendering To China?</a
+                    >
+                    <p class="text-uppercase text-muted text-xs">
+                      By <span class="text-secondary font-weight-bold">GORDON G. CHANG</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-center py-3 border-bottom">
+                  <!--Opinion4-->
+                  <div>
+                    <img
+                      src="https://d.newsweek.com/en/full/1681328/michael-medved.png?w=63&h=63&f=93e1a9beae177066a13a0540ea916e93"
+                      alt="."
+                    />
+                  </div>
+                  <div class="ml-3">
+                    <a href="#" class="text-base text-black hover:underline-primary"
+                      >An Inauguration Day Tradition too Precious to Sacrifice</a
+                    >
+                    <p class="text-uppercase text-muted text-xs">
+                      By <span class="text-secondary font-weight-bold">MICHAEL MEDVED</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-center py-3 border-bottom">
+                  <!--opinion5-->
+                  <div>
+                    <img
+                      src="https://d.newsweek.com/en/full/1681346/sam-westrop.png?w=63&h=63&f=7a831fc187ba96f267f3ff28cb551e19"
+                      alt="."
+                    />
+                  </div>
+                  <div class="ml-3">
+                    <a href="#" class="text-base text-black hover:underline-primary"
+                      >COVID Relief Funds Went to Violent Extremists</a
+                    >
+                    <p class="text-uppercase text-muted text-xs">
+                      By <span class="text-secondary font-weight-bold">SAM WESTROP</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-center py-3 border-bottom">
+                  <!--Opinion6-->
+                  <div>
+                    <img
+                      src="https://d.newsweek.com/en/full/1589825/abigail-shrier.png?w=63&h=63&f=1a7aeb15bcc2d4ca108143b6f75cfefa"
+                      alt="."
+                    />
+                  </div>
+                  <div class="ml-3">
+                    <a href="#" class="text-base text-black hover:underline-primary"
+                      >A British Court Breaks Gender Fever</a
+                    >
+                    <p class="text-uppercase text-muted text-xs">
+                      By <span class="text-secondary font-weight-bold">ABIGAIL SHRIER</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-center py-3">
+                  <!--Opinion7-->
+                  <div>
+                    <img
+                      src="https://d.newsweek.com/en/full/1646800/josh-hammer.png?w=63&h=63&f=cd14b8675c99d70b0e9c9d28906c5d29"
+                      alt="."
+                    />
+                  </div>
+                  <div class="ml-3">
+                    <a href="#" class="text-base text-black hover:underline-primary"
+                      >There's No Stopping America's Political Realignment</a
+                    >
+                    <p class="text-uppercase text-muted text-xs">
+                      By <span class="text-secondary font-weight-bold">JOSH HAMMER</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 p-0 offset-md-4 col-lg-12 offset-lg-0">
+                <div class="mt-3">
+                  <!--Sponsored Insight-->
+                  <div class="card">
+                    <div class="position-relative">
+                      <img
+                        src="https://d.newsweek.com/en/full/1681099/netherlands-online-module-amsterdam-photo.jpg?w=500&h=333&l=50&t=51&f=3610bf0950907bb346fc123edc405193"
+                        class="card-img-top no-border-radius"
+                        alt="..."
+                      />
+                      <div
+                        class="position-absolute card-label card-label-secondary inset-bottom-left"
+                      >
+                        <span class="text-uppercase">
+                          sponsored insight
+                        </span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <a class="hover:underline-primary text-black" href="#"
+                        ><p class="card-text text-lg mb-0">
+                          The Netherlands - Home of Innovation
+                        </p></a
+                      >
+                      <p class="text-xs mt-1">
+                        With a reputation as one of Europe’s most connected, digitized, and
+                        innovative economies, the Netherlands recently overtook the UK as the top
+                        recipient of FDI inflows in Europe.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-4 p-4 border">
+                  <!--Sign Up form-->
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="mr-2 bg-custom-primary signup-img"
+                      src="https://g.newsweek.com/www/images/logo-n1.svg"
+                      alt="newsweek"
+                    />
+                    <p class="text-base text-uppercase font-weight-bold">
+                      strat your day with our top 5 articles
+                    </p>
+                  </div>
+                  <form class="mt-3">
+                    <input class="custom-input border" type="email" placeholder="Email adress" />
+                    <input
+                      class="mt-2 p-1 signup-btn bg-custom-primary text-white font-weight-bold"
+                      type="submit"
+                      value="FREE SIGN UP >"
+                    />
+                  </form>
+                </div>
+
+                <div>
+                  <!--More sponsored inshights-->
+                  <div class="mt-4">
+                    <!--Sponsored Insight-->
+                    <div class="card">
+                      <div class="position-relative">
+                        <img
+                          src="https://d.newsweek.com/en/full/1671053/nnovate2.jpg?w=500&h=333&f=7c0fd52aaf6156db616eed42842988db"
+                          class="card-img-top no-border-radius"
+                          alt="..."
+                        />
+                        <div
+                          class="position-absolute card-label card-label-secondary inset-bottom-left"
+                        >
+                          <span class="text-uppercase">
+                            sponsored by berlin parterns
+                          </span>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <a class="hover:underline-primary text-black" href="#"
+                          ><p class="card-text text-lg mb-0">
+                            Berlin Partners Power NNOVATE
+                          </p></a
+                        >
+                        <p class="text-xs mt-1">
+                          Berlin has long been a place where new technologies develop at a
+                          particularly rapid pace. In the early years, the city was a special
+                          breeding ground for blockchain technology with its subversive flair.
+                          Today, the technology has become an important economic factor with
+                          countless use-cases. See the latest in crypto + blockchain and business.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-4">
+                    <!--Sponsored Insight-->
+                    <div class="card">
+                      <div class="position-relative">
+                        <img
+                          src="https://d.newsweek.com/en/full/1649388/schar-school.jpg?w=500&h=333&f=a4440e7504fefcc9e716a51774592db2"
+                          class="card-img-top no-border-radius"
+                          alt="..."
+                        />
+                        <div
+                          class="position-absolute card-label card-label-secondary inset-bottom-left"
+                        >
+                          <span class="text-uppercase">
+                            sponsored insight
+                          </span>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <a class="hover:underline-primary text-black" href="#"
+                          ><p class="card-text text-lg mb-0">
+                            Why are these careers so highly sought after?
+                          </p></a
+                        >
+                        <p class="text-xs mt-1">
+                          These are some of the most highly rated careers areas today. How do you
+                          get started in them?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-4">
+                    <!--Sponsored Insight-->
+                    <div class="card">
+                      <div class="position-relative">
+                        <img
+                          src="https://d.newsweek.com/en/full/1644076/americas-best-nursing-homes-2020.png?w=500&h=333&f=111d8839cccafaae6c19be7a5c9267ce"
+                          class="card-img-top no-border-radius"
+                          alt="..."
+                        />
+                        <div
+                          class="position-absolute card-label card-label-secondary inset-bottom-left"
+                        >
+                          <span class="text-uppercase">
+                            rankings
+                          </span>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <a class="hover:underline-primary text-black" href="#"
+                          ><p class="card-text text-lg mb-0">
+                            America's Best Nursing Homes 2021
+                          </p></a
+                        >
+                        <p class="text-xs mt-1">
+                          In partnership with Statista, we established a ranking providing
+                          information and insights to help you during this challenging time.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-4">
+                    <!--Sponsored Insight-->
+                    <div class="card">
+                      <div class="position-relative">
+                        <img
+                          src="https://d.newsweek.com/en/full/1641111/kent-state-university.png?w=500&h=333&f=fdeec31b71b2c81bfe2b4c3ec1e8f2ee"
+                          class="card-img-top no-border-radius"
+                          alt="..."
+                        />
+                        <div
+                          class="position-absolute card-label card-label-secondary inset-bottom-left"
+                        >
+                          <span class="text-uppercase">
+                            sponsored insight
+                          </span>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <a class="hover:underline-primary text-black" href="#"
+                          ><p class="card-text text-lg mb-0">
+                            Who has the Leading Art, Design and Architecture Programs in 2020?
+                          </p></a
+                        >
+                        <p class="text-xs mt-1">
+                          The best Art, Design and Architecture schools use a recipe consisting of a
+                          blend of ingredients. Read more here.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-4">
+                    <!--Sponsored Insight-->
+                    <div class="card">
+                      <div class="position-relative">
+                        <img
+                          src="https://d.newsweek.com/en/full/1638920/image-3-this-startup-making.jpg?w=500&h=333&f=d3ab894bb4a4f0a8af53551fabfb306d"
+                          class="card-img-top no-border-radius"
+                          alt="..."
+                        />
+                        <div
+                          class="position-absolute card-label card-label-secondary inset-bottom-left"
+                        >
+                          <span class="text-uppercase">
+                            sponsored insight
+                          </span>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <a class="hover:underline-primary text-black" href="#"
+                          ><p class="card-text text-lg mb-0">
+                            This Startup Is Making Long Distance Real Estate Investing Possible for
+                            Millennials
+                          </p></a
+                        >
+                        <p class="text-xs mt-1">
+                          75% of Roofstock users are first-time real estate investors, and more than
+                          half are under 35.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-4">
+                    <!--Sponsored Insight-->
+                    <div class="card">
+                      <div class="position-relative">
+                        <img
+                          src="https://d.newsweek.com/en/full/1621635/americas-best-addiction-treatment-centers-2020.png?w=500&h=333&f=882d6618257cbde5fd5acc54362e6fe9"
+                          class="card-img-top no-border-radius"
+                          alt="..."
+                        />
+                        <div
+                          class="position-absolute card-label card-label-secondary inset-bottom-left"
+                        >
+                          <span class="text-uppercase">
+                            rankings
+                          </span>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <a class="hover:underline-primary text-black" href="#"
+                          ><p class="card-text text-lg mb-0">
+                            America's Best Addiction Treatment Centers 2020
+                          </p></a
+                        >
+                        <p class="text-xs mt-1">
+                          Newsweek partnered with global market research firm Statista Inc. to rank
+                          the best U.S. treatment facilities that focus on addiction.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-4">
+                    <!--Sponsored Insight-->
+                    <div class="card">
+                      <div class="position-relative">
+                        <img
+                          src="https://d.newsweek.com/en/full/1639282/worlds-best-hospitals-2021.png?w=500&h=333&f=c972c7df650ba44249ef33dd7ae66b4f"
+                          class="card-img-top no-border-radius"
+                          alt="..."
+                        />
+                        <div
+                          class="position-absolute card-label card-label-secondary inset-bottom-left"
+                        >
+                          <span class="text-uppercase">
+                            survey
+                          </span>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <a class="hover:underline-primary text-black" href="#"
+                          ><p class="card-text text-lg mb-0">
+                            The Best Hospitals in the World
+                          </p></a
+                        >
+                        <p class="text-xs mt-1">
+                          Newsweek has partnered with Statista Inc., the global market research and
+                          consumer data firm, to develop the ranking of the world's best hospitals
+                          for the third year.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center mt-2 border-bottom p-2">
+          <!--In the magazine header-->
+          <img
+            class="bg-custom-primary signup-img mr-2"
+            src="https://g.newsweek.com/www/images/logo-n1.svg"
+            alt="newsweek"
+          />
+          <span class="text-uppercase font-weight-bold">in the magazine</span>
+        </div>
+        <div>
+          <!--In the magazine Content-->
+          <div class="mt-3 row">
+            <div class="col-md-3">
+              <div class="card-noborder card">
+                <div class="position-relative">
+                  <img
+                    class="card-img-top no-border-radius"
+                    src="https://d.newsweek.com/en/full/1675581/cover-december-04-11-2020.jpg?w=360&h=480&q=90&f=72688076d2b17cf70a26e18a31a2a69a"
+                    alt=""
+                  />
+                  <div class="position-absolute inset-bottom-left card-label">
+                    <span class="text-uppercase">December 11 issue</span>
+                  </div>
+                </div>
+                <div class="card-body p-0 mt-1">
+                  <a href="#" class="btn btn-block btn-light text-base text-uppercase">
+                    see all features >
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card-noborder card">
+                <img
+                  class="card-img-top no-border-radius"
+                  src="https://d.newsweek.com/en/full/1674257/cover-fe-vaccine-moderna.jpg?w=466&h=311&l=49&t=48&q=90&f=b4199882348a460299d282c96d719a51"
+                  alt="..."
+                />
+                <div class="card-body px-0">
+                  <div class="d-flex">
+                    <div class="card-label card-label-primary">
+                      <span class="text-uppercase">
+                        cover
+                      </span>
+                    </div>
+                    <div class="card-label inset-bottom-left">
+                      <span class="text-uppercase">
+                        health
+                      </span>
+                    </div>
+                  </div>
+                  <a class="d-block text-lg mt-2 text-black hover:underline-primary" href="#">
+                    Vaccines Won't Stop the Pandemic Until 50 Million US Skeptics Embrace Them
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card-noborder card">
+                <img
+                  class="card-img-top no-border-radius"
+                  src="https://d.newsweek.com/en/full/1674257/cover-fe-vaccine-moderna.jpg?w=466&h=311&l=49&t=48&q=90&f=b4199882348a460299d282c96d719a51"
+                  alt="..."
+                />
+                <div class="card-body px-0">
+                  <div class="d-flex">
+                    <div class="card-label card-label-primary">
+                      <span class="text-uppercase">
+                        cover
+                      </span>
+                    </div>
+                    <div class="card-label inset-bottom-left">
+                      <span class="text-uppercase">
+                        health
+                      </span>
+                    </div>
+                  </div>
+                  <a class="d-block text-lg mt-2 text-black hover:underline-primary" href="#"
+                    >Vaccines Won't Stop the Pandemic Until 50 Million US Skeptics Embrace Them</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card-noborder card">
+                <img
+                  class="card-img-top no-border-radius"
+                  src="https://d.newsweek.com/en/full/1674257/cover-fe-vaccine-moderna.jpg?w=466&h=311&l=49&t=48&q=90&f=b4199882348a460299d282c96d719a51"
+                  alt="..."
+                />
+                <div class="card-body px-0">
+                  <div class="d-flex">
+                    <div class="card-label card-label-primary">
+                      <span class="text-uppercase">
+                        cover
+                      </span>
+                    </div>
+                    <div class="card-label inset-bottom-left">
+                      <span class="text-uppercase">
+                        health
+                      </span>
+                    </div>
+                  </div>
+                  <a class="d-block text-lg mt-2 text-black hover:underline-primary" href="#"
+                    >Vaccines Won't Stop the Pandemic Until 50 Million US Skeptics Embrace Them</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card-noborder card">
+                <img
+                  class="card-img-top no-border-radius"
+                  src="https://d.newsweek.com/en/full/1674257/cover-fe-vaccine-moderna.jpg?w=466&h=311&l=49&t=48&q=90&f=b4199882348a460299d282c96d719a51"
+                  alt="..."
+                />
+                <div class="card-body px-0">
+                  <div class="d-flex">
+                    <div class="card-label card-label-primary">
+                      <span class="text-uppercase">
+                        cover
+                      </span>
+                    </div>
+                    <div class="card-label inset-bottom-left">
+                      <span class="text-uppercase">
+                        health
+                      </span>
+                    </div>
+                  </div>
+                  <a class="d-block text-lg mt-2 text-black hover:underline-primary" href="#"
+                    >Vaccines Won't Stop the Pandemic Until 50 Million US Skeptics Embrace Them</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card-noborder card">
+                <img
+                  class="card-img-top no-border-radius"
+                  src="https://d.newsweek.com/en/full/1674257/cover-fe-vaccine-moderna.jpg?w=466&h=311&l=49&t=48&q=90&f=b4199882348a460299d282c96d719a51"
+                  alt="..."
+                />
+                <div class="card-body px-0">
+                  <div class="d-flex">
+                    <div class="card-label card-label-primary">
+                      <span class="text-uppercase">
+                        cover
+                      </span>
+                    </div>
+                    <div class="card-label inset-bottom-left">
+                      <span class="text-uppercase">
+                        health
+                      </span>
+                    </div>
+                  </div>
+                  <a class="d-block text-lg mt-2 text-black hover:underline-primary" href="#"
+                    >Vaccines Won't Stop the Pandemic Until 50 Million US Skeptics Embrace Them</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card-noborder card">
+                <img
+                  class="card-img-top no-border-radius"
+                  src="https://d.newsweek.com/en/full/1674257/cover-fe-vaccine-moderna.jpg?w=466&h=311&l=49&t=48&q=90&f=b4199882348a460299d282c96d719a51"
+                  alt="..."
+                />
+                <div class="card-body px-0">
+                  <div class="d-flex">
+                    <div class="card-label card-label-primary">
+                      <span class="text-uppercase">
+                        cover
+                      </span>
+                    </div>
+                    <div class="card-label inset-bottom-left">
+                      <span class="text-uppercase">
+                        health
+                      </span>
+                    </div>
+                  </div>
+                  <a class="d-block text-lg mt-2 text-black hover:underline-primary" href="#"
+                    >Vaccines Won't Stop the Pandemic Until 50 Million US Skeptics Embrace Them</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row"></div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center mt-2 border-bottom p-2">
+          <!--Editor's pick header-->
+          <img
+            class="bg-custom-primary signup-img mr-2"
+            src="https://g.newsweek.com/www/images/logo-n1.svg"
+            alt=""
+          />
+          <span class="text-uppercase font-weight-bold">editor's pick</span>
+        </div>
+        <div class="row">
+          <!--Editiro's pick content-->
+          <div class="mt-3 col-md-6 col-lg-3">
+            <!--Editiro's pick 1-->
+            <div class="card card-noborder">
+              <div class="position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1680583/giuliani-appears-before-michigan-house.jpg?w=397&h=265&q=90&f=17e2c3c6f5377adaa552b23affddfc74"
+                  class="card-img-top no-border-radius"
+                  alt="..."
+                />
+                <div class="position-absolute card-label inset-bottom-left">
+                  <span class="text-uppercase">
+                    news
+                  </span>
+                </div>
+              </div>
+              <div class="card-body px-0 pb-0">
+                <a class="hover:underline-primary text-black hover:underline-primary" href="#"
+                  ><p class="card-text text-lg mb-0">
+                    Giuliani Tests Positive for COVID, Appeared Maskless at Election Hearings
+                  </p></a
+                >
+                <p class="text-xs mt-1">
+                  Georgia Democratic Senate candidate Jon Ossoff asked the empty podium—which
+                  moderator Russ Spencer introduced as Republican Senator David Perdue—several
+                  questions, and then answered them himself.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-3 col-md-6 col-lg-3">
+            <!--Editiro's pick 1-->
+            <div class="card card-noborder">
+              <div class="position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1680583/giuliani-appears-before-michigan-house.jpg?w=397&h=265&q=90&f=17e2c3c6f5377adaa552b23affddfc74"
+                  class="card-img-top no-border-radius"
+                  alt="..."
+                />
+                <div class="position-absolute card-label inset-bottom-left">
+                  <span class="text-uppercase">
+                    news
+                  </span>
+                </div>
+              </div>
+              <div class="card-body px-0 pb-0">
+                <a class="hover:underline-primary text-black hover:underline-primary" href="#"
+                  ><p class="card-text text-lg mb-0">
+                    Giuliani Tests Positive for COVID, Appeared Maskless at Election Hearings
+                  </p></a
+                >
+                <p class="text-xs mt-1">
+                  Georgia Democratic Senate candidate Jon Ossoff asked the empty podium—which
+                  moderator Russ Spencer introduced as Republican Senator David Perdue—several
+                  questions, and then answered them himself.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-3 col-md-6 col-lg-3">
+            <!--Editiro's pick 1-->
+            <div class="card card-noborder">
+              <div class="position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1680583/giuliani-appears-before-michigan-house.jpg?w=397&h=265&q=90&f=17e2c3c6f5377adaa552b23affddfc74"
+                  class="card-img-top no-border-radius"
+                  alt="..."
+                />
+                <div class="position-absolute card-label inset-bottom-left">
+                  <span class="text-uppercase">
+                    news
+                  </span>
+                </div>
+              </div>
+              <div class="card-body px-0 pb-0">
+                <a class="hover:underline-primary text-black hover:underline-primary" href="#"
+                  ><p class="card-text text-lg mb-0">
+                    Giuliani Tests Positive for COVID, Appeared Maskless at Election Hearings
+                  </p></a
+                >
+                <p class="text-xs mt-1">
+                  Georgia Democratic Senate candidate Jon Ossoff asked the empty podium—which
+                  moderator Russ Spencer introduced as Republican Senator David Perdue—several
+                  questions, and then answered them himself.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-3 col-md-6 col-lg-3">
+            <!--Editiro's pick 1-->
+            <div class="card card-noborder">
+              <div class="position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1680583/giuliani-appears-before-michigan-house.jpg?w=397&h=265&q=90&f=17e2c3c6f5377adaa552b23affddfc74"
+                  class="card-img-top no-border-radius"
+                  alt="..."
+                />
+                <div class="position-absolute card-label inset-bottom-left">
+                  <span class="text-uppercase">
+                    news
+                  </span>
+                </div>
+              </div>
+              <div class="card-body px-0 pb-0">
+                <a class="hover:underline-primary text-black hover:underline-primary" href="#"
+                  ><p class="card-text text-lg mb-0">
+                    Giuliani Tests Positive for COVID, Appeared Maskless at Election Hearings
+                  </p></a
+                >
+                <p class="text-xs mt-1">
+                  Georgia Democratic Senate candidate Jon Ossoff asked the empty podium—which
+                  moderator Russ Spencer introduced as Republican Senator David Perdue—several
+                  questions, and then answered them himself.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-3 col-md-6 col-lg-3">
+            <!--Editiro's pick 1-->
+            <div class="card card-noborder">
+              <div class="position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1680583/giuliani-appears-before-michigan-house.jpg?w=397&h=265&q=90&f=17e2c3c6f5377adaa552b23affddfc74"
+                  class="card-img-top no-border-radius"
+                  alt="..."
+                />
+                <div class="position-absolute card-label inset-bottom-left">
+                  <span class="text-uppercase">
+                    news
+                  </span>
+                </div>
+              </div>
+              <div class="card-body px-0 pb-0">
+                <a class="hover:underline-primary text-black hover:underline-primary" href="#"
+                  ><p class="card-text text-lg mb-0">
+                    Giuliani Tests Positive for COVID, Appeared Maskless at Election Hearings
+                  </p></a
+                >
+                <p class="text-xs mt-1">
+                  Georgia Democratic Senate candidate Jon Ossoff asked the empty podium—which
+                  moderator Russ Spencer introduced as Republican Senator David Perdue—several
+                  questions, and then answered them himself.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-3 col-md-6 col-lg-3">
+            <!--Editiro's pick 1-->
+            <div class="card card-noborder">
+              <div class="position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1680583/giuliani-appears-before-michigan-house.jpg?w=397&h=265&q=90&f=17e2c3c6f5377adaa552b23affddfc74"
+                  class="card-img-top no-border-radius"
+                  alt="..."
+                />
+                <div class="position-absolute card-label inset-bottom-left">
+                  <span class="text-uppercase">
+                    news
+                  </span>
+                </div>
+              </div>
+              <div class="card-body px-0 pb-0">
+                <a class="hover:underline-primary text-black hover:underline-primary" href="#"
+                  ><p class="card-text text-lg mb-0">
+                    Giuliani Tests Positive for COVID, Appeared Maskless at Election Hearings
+                  </p></a
+                >
+                <p class="text-xs mt-1">
+                  Georgia Democratic Senate candidate Jon Ossoff asked the empty podium—which
+                  moderator Russ Spencer introduced as Republican Senator David Perdue—several
+                  questions, and then answered them himself.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-3 col-md-6 col-lg-3">
+            <!--Editiro's pick 1-->
+            <div class="card card-noborder">
+              <div class="position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1680583/giuliani-appears-before-michigan-house.jpg?w=397&h=265&q=90&f=17e2c3c6f5377adaa552b23affddfc74"
+                  class="card-img-top no-border-radius"
+                  alt="..."
+                />
+                <div class="position-absolute card-label inset-bottom-left">
+                  <span class="text-uppercase">
+                    news
+                  </span>
+                </div>
+              </div>
+              <div class="card-body px-0 pb-0">
+                <a class="hover:underline-primary text-black hover:underline-primary" href="#"
+                  ><p class="card-text text-lg mb-0">
+                    Giuliani Tests Positive for COVID, Appeared Maskless at Election Hearings
+                  </p></a
+                >
+                <p class="text-xs mt-1">
+                  Georgia Democratic Senate candidate Jon Ossoff asked the empty podium—which
+                  moderator Russ Spencer introduced as Republican Senator David Perdue—several
+                  questions, and then answered them himself.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-3 col-md-6 col-lg-3">
+            <!--Editiro's pick 1-->
+            <div class="card card-noborder">
+              <div class="position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1680583/giuliani-appears-before-michigan-house.jpg?w=397&h=265&q=90&f=17e2c3c6f5377adaa552b23affddfc74"
+                  class="card-img-top no-border-radius"
+                  alt="..."
+                />
+                <div class="position-absolute card-label inset-bottom-left">
+                  <span class="text-uppercase">
+                    news
+                  </span>
+                </div>
+              </div>
+              <div class="card-body px-0 pb-0">
+                <a class="hover:underline-primary text-black hover:underline-primary" href="#"
+                  ><p class="card-text text-lg mb-0">
+                    Giuliani Tests Positive for COVID, Appeared Maskless at Election Hearings
+                  </p></a
+                >
+                <p class="text-xs mt-1">
+                  Georgia Democratic Senate candidate Jon Ossoff asked the empty podium—which
+                  moderator Russ Spencer introduced as Republican Senator David Perdue—several
+                  questions, and then answered them himself.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-5">
+          <section class="section">
+            <h3 class="section-title">U.s.</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card card-noborder">
+                  <img
+                    src="https://d.newsweek.com/en/full/1682356/chuck-yeager-famous-quotes.jpg?w=397&h=265&f=bf856db4e2d78fdbac538bd02c037297"
+                    class="card-img-top no-border-radius"
+                    alt="..."
+                  />
+                  <div class="card-body px-0">
+                    <a class="hover:underline-primary text-black hover:underline-primary" href="#">
+                      <p class="card-text text-lg mb-0">
+                        Top 20 Quotes From Chuck Yeager, First Man to Break The Sound Barrier
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card-noborder">
+                  <img
+                    src="https://d.newsweek.com/en/full/1682356/chuck-yeager-famous-quotes.jpg?w=397&h=265&f=bf856db4e2d78fdbac538bd02c037297"
+                    class="card-img-top no-border-radius"
+                    alt="..."
+                  />
+                  <div class="card-body px-0">
+                    <a class="hover:underline-primary text-black hover:underline-primary" href="#">
+                      <p class="card-text text-lg mb-0">
+                        Top 20 Quotes From Chuck Yeager, First Man to Break The Sound Barrier
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card-noborder">
+                  <div class="row">
+                    <div class="col-5 col-md-6 col-lg-4">
+                      <img
+                        src="https://d.newsweek.com/en/full/1682353/elizabeth-warren-wants-better-stimulus-package.jpg?w=397&h=265&f=3f76c48c4ae62e4231276dc8e37e6348"
+                        alt="..."
+                        class="custom-img"
+                      />
+                    </div>
+                    <div class="col-7 col-md-6 col-lg-8 pl-0">
+                      <div class="card-body p-0">
+                        <a href="#" class="text-black font-weight-bolder hover:underline-primary">
+                          Progressive Opposition Threatens Stimulus Bill: 'Dollar Amount Too Low'
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-3 border-gray" />
+                <div class="card card-noborder">
+                  <div class="row">
+                    <div class="col-5 col-md-6 col-lg-4">
+                      <img
+                        src="https://d.newsweek.com/en/full/1682353/elizabeth-warren-wants-better-stimulus-package.jpg?w=397&h=265&f=3f76c48c4ae62e4231276dc8e37e6348"
+                        alt="..."
+                        class="custom-img"
+                      />
+                    </div>
+                    <div class="col-7 col-md-6 col-lg-8 pl-0">
+                      <div class="card-body p-0">
+                        <a href="#" class="text-black font-weight-bolder hover:underline-primary">
+                          Progressive Opposition Threatens Stimulus Bill: 'Dollar Amount Too Low'
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-3 border-gray" />
+                <div class="card card-noborder">
+                  <div class="row">
+                    <div class="col-5 col-md-6 col-lg-4">
+                      <img
+                        src="https://d.newsweek.com/en/full/1682353/elizabeth-warren-wants-better-stimulus-package.jpg?w=397&h=265&f=3f76c48c4ae62e4231276dc8e37e6348"
+                        alt="..."
+                        class="custom-img"
+                      />
+                    </div>
+                    <div class="col-7 col-md-6 col-lg-8 pl-0">
+                      <div class="card-body p-0">
+                        <a href="#" class="text-black font-weight-bolder hover:underline-primary">
+                          Progressive Opposition Threatens Stimulus Bill: 'Dollar Amount Too Low'
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section">
+            <h3 class="section-title">World</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card card-noborder">
+                  <img
+                    src="https://d.newsweek.com/en/full/1682277/iran-velayati-syria-mekdadi-meeting.jpg?w=397&h=265&f=a3e80b053ca37a126b2922f75ce38a8a"
+                    class="card-img-top no-border-radius"
+                    alt="..."
+                  />
+                  <div class="card-body px-0">
+                    <a class="hover:underline-primary text-black hover:underline-primary" href="#">
+                      <p class="card-text text-lg mb-0">
+                        Top 20 Quotes From Chuck Yeager, First Man to Break The Sound Barrier
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card-noborder">
+                  <img
+                    src="https://d.newsweek.com/en/full/1682356/chuck-yeager-famous-quotes.jpg?w=397&h=265&f=bf856db4e2d78fdbac538bd02c037297"
+                    class="card-img-top no-border-radius"
+                    alt="..."
+                  />
+                  <div class="card-body px-0">
+                    <a class="hover:underline-primary text-black hover:underline-primary" href="#">
+                      <p class="card-text text-lg mb-0">
+                        Top 20 Quotes From Chuck Yeager, First Man to Break The Sound Barrier
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card-noborder">
+                  <div class="row">
+                    <div class="col-5 col-md-6 col-lg-4">
+                      <img
+                        src="https://d.newsweek.com/en/full/1682353/elizabeth-warren-wants-better-stimulus-package.jpg?w=397&h=265&f=3f76c48c4ae62e4231276dc8e37e6348"
+                        alt="..."
+                        class="custom-img"
+                      />
+                    </div>
+                    <div class="col-7 col-md-6 col-lg-8 pl-0">
+                      <div class="card-body p-0">
+                        <a href="#" class="text-black font-weight-bolder hover:underline-primary">
+                          Progressive Opposition Threatens Stimulus Bill: 'Dollar Amount Too Low'
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-3 border-gray" />
+                <div class="card card-noborder">
+                  <div class="row">
+                    <div class="col-5 col-md-6 col-lg-4">
+                      <img
+                        src="https://d.newsweek.com/en/full/1682353/elizabeth-warren-wants-better-stimulus-package.jpg?w=397&h=265&f=3f76c48c4ae62e4231276dc8e37e6348"
+                        alt="..."
+                        class="custom-img"
+                      />
+                    </div>
+                    <div class="col-7 col-md-6 col-lg-8 pl-0">
+                      <div class="card-body p-0">
+                        <a href="#" class="text-black font-weight-bolder hover:underline-primary">
+                          Progressive Opposition Threatens Stimulus Bill: 'Dollar Amount Too Low'
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-3 border-gray" />
+                <div class="card card-noborder">
+                  <div class="row">
+                    <div class="col-5 col-md-6 col-lg-4">
+                      <img
+                        src="https://d.newsweek.com/en/full/1682353/elizabeth-warren-wants-better-stimulus-package.jpg?w=397&h=265&f=3f76c48c4ae62e4231276dc8e37e6348"
+                        alt="..."
+                        class="custom-img"
+                      />
+                    </div>
+                    <div class="col-7 col-md-6 col-lg-8 pl-0">
+                      <div class="card-body p-0">
+                        <a href="#" class="text-black font-weight-bolder hover:underline-primary">
+                          Progressive Opposition Threatens Stimulus Bill: 'Dollar Amount Too Low'
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section">
+            <h3 class="section-title">World</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card card-noborder">
+                  <img
+                    src="https://d.newsweek.com/en/full/1682277/iran-velayati-syria-mekdadi-meeting.jpg?w=397&h=265&f=a3e80b053ca37a126b2922f75ce38a8a"
+                    class="card-img-top no-border-radius"
+                    alt="..."
+                  />
+                  <div class="card-body px-0">
+                    <a class="hover:underline-primary text-black hover:underline-primary" href="#">
+                      <p class="card-text text-lg mb-0">
+                        Top 20 Quotes From Chuck Yeager, First Man to Break The Sound Barrier
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card-noborder">
+                  <img
+                    src="https://d.newsweek.com/en/full/1682356/chuck-yeager-famous-quotes.jpg?w=397&h=265&f=bf856db4e2d78fdbac538bd02c037297"
+                    class="card-img-top no-border-radius"
+                    alt="..."
+                  />
+                  <div class="card-body px-0">
+                    <a class="hover:underline-primary text-black hover:underline-primary" href="#">
+                      <p class="card-text text-lg mb-0">
+                        Top 20 Quotes From Chuck Yeager, First Man to Break The Sound Barrier
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card-noborder">
+                  <div class="row">
+                    <div class="col-5 col-md-6 col-lg-4">
+                      <img
+                        src="https://d.newsweek.com/en/full/1682353/elizabeth-warren-wants-better-stimulus-package.jpg?w=397&h=265&f=3f76c48c4ae62e4231276dc8e37e6348"
+                        alt="..."
+                        class="custom-img"
+                      />
+                    </div>
+                    <div class="col-7 col-md-6 col-lg-8 pl-0">
+                      <div class="card-body p-0">
+                        <a href="#" class="text-black font-weight-bolder hover:underline-primary">
+                          Progressive Opposition Threatens Stimulus Bill: 'Dollar Amount Too Low'
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-3 border-gray" />
+                <div class="card card-noborder">
+                  <div class="row">
+                    <div class="col-5 col-md-6 col-lg-4">
+                      <img
+                        src="https://d.newsweek.com/en/full/1682353/elizabeth-warren-wants-better-stimulus-package.jpg?w=397&h=265&f=3f76c48c4ae62e4231276dc8e37e6348"
+                        alt="..."
+                        class="custom-img"
+                      />
+                    </div>
+                    <div class="col-7 col-md-6 col-lg-8 pl-0">
+                      <div class="card-body p-0">
+                        <a href="#" class="text-black font-weight-bolder hover:underline-primary">
+                          Progressive Opposition Threatens Stimulus Bill: 'Dollar Amount Too Low'
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-3 border-gray" />
+                <div class="card card-noborder">
+                  <div class="row">
+                    <div class="col-5 col-md-6 col-lg-4">
+                      <img
+                        src="https://d.newsweek.com/en/full/1682353/elizabeth-warren-wants-better-stimulus-package.jpg?w=397&h=265&f=3f76c48c4ae62e4231276dc8e37e6348"
+                        alt="..."
+                        class="custom-img"
+                      />
+                    </div>
+                    <div class="col-7 col-md-6 col-lg-8 pl-0">
+                      <div class="card-body p-0">
+                        <a href="#" class="text-black font-weight-bolder hover:underline-primary">
+                          Progressive Opposition Threatens Stimulus Bill: 'Dollar Amount Too Low'
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section">
+            <h3 class="section-title">World</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card card-noborder">
+                  <img
+                    src="https://d.newsweek.com/en/full/1682277/iran-velayati-syria-mekdadi-meeting.jpg?w=397&h=265&f=a3e80b053ca37a126b2922f75ce38a8a"
+                    class="card-img-top no-border-radius"
+                    alt="..."
+                  />
+                  <div class="card-body px-0">
+                    <a class="hover:underline-primary text-black hover:underline-primary" href="#">
+                      <p class="card-text text-lg mb-0">
+                        Top 20 Quotes From Chuck Yeager, First Man to Break The Sound Barrier
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card-noborder">
+                  <img
+                    src="https://d.newsweek.com/en/full/1682356/chuck-yeager-famous-quotes.jpg?w=397&h=265&f=bf856db4e2d78fdbac538bd02c037297"
+                    class="card-img-top no-border-radius"
+                    alt="..."
+                  />
+                  <div class="card-body px-0">
+                    <a class="hover:underline-primary text-black hover:underline-primary" href="#">
+                      <p class="card-text text-lg mb-0">
+                        Top 20 Quotes From Chuck Yeager, First Man to Break The Sound Barrier
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card-noborder">
+                  <div class="row">
+                    <div class="col-5 col-md-6 col-lg-4">
+                      <img
+                        src="https://d.newsweek.com/en/full/1682353/elizabeth-warren-wants-better-stimulus-package.jpg?w=397&h=265&f=3f76c48c4ae62e4231276dc8e37e6348"
+                        alt="..."
+                        class="custom-img"
+                      />
+                    </div>
+                    <div class="col-7 col-md-6 col-lg-8 pl-0">
+                      <div class="card-body p-0">
+                        <a href="#" class="text-black font-weight-bolder hover:underline-primary">
+                          Progressive Opposition Threatens Stimulus Bill: 'Dollar Amount Too Low'
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-3 border-gray" />
+                <div class="card card-noborder">
+                  <div class="row">
+                    <div class="col-5 col-md-6 col-lg-4">
+                      <img
+                        src="https://d.newsweek.com/en/full/1682353/elizabeth-warren-wants-better-stimulus-package.jpg?w=397&h=265&f=3f76c48c4ae62e4231276dc8e37e6348"
+                        alt="..."
+                        class="custom-img"
+                      />
+                    </div>
+                    <div class="col-7 col-md-6 col-lg-8 pl-0">
+                      <div class="card-body p-0">
+                        <a href="#" class="text-black font-weight-bolder hover:underline-primary">
+                          Progressive Opposition Threatens Stimulus Bill: 'Dollar Amount Too Low'
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-3 border-gray" />
+                <div class="card card-noborder">
+                  <div class="row">
+                    <div class="col-5 col-md-6 col-lg-4">
+                      <img
+                        src="https://d.newsweek.com/en/full/1682353/elizabeth-warren-wants-better-stimulus-package.jpg?w=397&h=265&f=3f76c48c4ae62e4231276dc8e37e6348"
+                        alt="..."
+                        class="custom-img"
+                      />
+                    </div>
+                    <div class="col-7 col-md-6 col-lg-8 pl-0">
+                      <div class="card-body p-0">
+                        <a href="#" class="text-black font-weight-bolder hover:underline-primary">
+                          Progressive Opposition Threatens Stimulus Bill: 'Dollar Amount Too Low'
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section">
+            <h3 class="section-title">World</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card card-noborder">
+                  <img
+                    src="https://d.newsweek.com/en/full/1682277/iran-velayati-syria-mekdadi-meeting.jpg?w=397&h=265&f=a3e80b053ca37a126b2922f75ce38a8a"
+                    class="card-img-top no-border-radius"
+                    alt="..."
+                  />
+                  <div class="card-body px-0">
+                    <a class="hover:underline-primary text-black hover:underline-primary" href="#">
+                      <p class="card-text text-lg mb-0">
+                        Top 20 Quotes From Chuck Yeager, First Man to Break The Sound Barrier
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card-noborder">
+                  <img
+                    src="https://d.newsweek.com/en/full/1682356/chuck-yeager-famous-quotes.jpg?w=397&h=265&f=bf856db4e2d78fdbac538bd02c037297"
+                    class="card-img-top no-border-radius"
+                    alt="..."
+                  />
+                  <div class="card-body px-0">
+                    <a class="hover:underline-primary text-black hover:underline-primary" href="#">
+                      <p class="card-text text-lg mb-0">
+                        Top 20 Quotes From Chuck Yeager, First Man to Break The Sound Barrier
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card-noborder">
+                  <div class="row">
+                    <div class="col-5 col-md-6 col-lg-4">
+                      <img
+                        src="https://d.newsweek.com/en/full/1682353/elizabeth-warren-wants-better-stimulus-package.jpg?w=397&h=265&f=3f76c48c4ae62e4231276dc8e37e6348"
+                        alt="..."
+                        class="custom-img"
+                      />
+                    </div>
+                    <div class="col-7 col-md-6 col-lg-8 pl-0">
+                      <div class="card-body p-0">
+                        <a href="#" class="text-black font-weight-bolder hover:underline-primary">
+                          Progressive Opposition Threatens Stimulus Bill: 'Dollar Amount Too Low'
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-3 border-gray" />
+                <div class="card card-noborder">
+                  <div class="row">
+                    <div class="col-5 col-md-6 col-lg-4">
+                      <img
+                        src="https://d.newsweek.com/en/full/1682353/elizabeth-warren-wants-better-stimulus-package.jpg?w=397&h=265&f=3f76c48c4ae62e4231276dc8e37e6348"
+                        alt="..."
+                        class="custom-img"
+                      />
+                    </div>
+                    <div class="col-7 col-md-6 col-lg-8 pl-0">
+                      <div class="card-body p-0">
+                        <a href="#" class="text-black font-weight-bolder hover:underline-primary">
+                          Progressive Opposition Threatens Stimulus Bill: 'Dollar Amount Too Low'
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-3 border-gray" />
+                <div class="card card-noborder">
+                  <div class="row">
+                    <div class="col-5 col-md-6 col-lg-4">
+                      <img
+                        src="https://d.newsweek.com/en/full/1682353/elizabeth-warren-wants-better-stimulus-package.jpg?w=397&h=265&f=3f76c48c4ae62e4231276dc8e37e6348"
+                        alt="..."
+                        class="custom-img"
+                      />
+                    </div>
+                    <div class="col-7 col-md-6 col-lg-8 pl-0">
+                      <div class="card-body p-0">
+                        <a href="#" class="text-black font-weight-bolder hover:underline-primary">
+                          Progressive Opposition Threatens Stimulus Bill: 'Dollar Amount Too Low'
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="p-4 row">
+          <div class="mb-3 col-lg-8">
+            <div>
+              <span class="font-weight-bold text-uppercase text-orange">
+                news
+              </span>
+            </div>
+            <div class="bg-custom-graylighter card-noborder card p-4">
+              <div class="row g-0">
+                <div
+                  class="d-flex justify-content-center align-items-center position-relative d-flex col-md-4"
+                >
+                  <img
+                    src="https://d.newsweek.com/en/full/1671676/cover-november-27-2020.jpg?w=170&q=95&f=58167a570fb61a0b8203f0526bc45eca"
+                    alt="..."
+                  />
+                  <img
+                    class="position-absolute left-50"
+                    src="https://d.newsweek.com/en/full/1675581/cover-december-04-11-2020.jpg?w=170&q=95&f=b831bcfec318510363b4a65a51bc2b6a"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="d-flex justify-content-center align-items-center card-body">
+                    <div class="ml-md-5 text-center text-md-left">
+                      <a class="text-black text-lg hover:underline-primary card-title" href="#"
+                        >In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</a
+                      >
+                      <p class="mt-2 card-text">
+                        All Access + Weekly Delivery. Choose A Membership That's Perfect for You!
+                      </p>
+                      <button
+                        class="mt-2 bg-custom-primary btn text-white font-weight-bold"
+                        type="button"
+                      >
+                        SUBSCRIBE >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div>
+              <span class="font-weight-bold text-uppercase text-orange">
+                news
+              </span>
+            </div>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="d-flex justify-content-center col-12 col-md-6">
+                  <img
+                    class="card-img-top"
+                    height="100"
+                    width="100"
+                    style="object-fit: cover;"
+                    src="https://d.newsweek.com/en/full/1541302/starting5-homepage.png"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-12 col-md-6 pl-0 d-flex align-items-center">
+                  <div class="text-center text-lg-left card-body">
+                    <div>
+                      <p class="text-lg card-title">The Starting 5</p>
+                      <p class="card-text">
+                        See why nearly a quarter of a million subscribers begin their day with the
+                        Starting 5.
+                      </p>
+                      <form class="d-flex d-lg-block mt-3">
+                        <input
+                          class="custom-input border"
+                          type="email"
+                          placeholder="Email adress"
+                        />
+                        <input
+                          class="mt-lg-2 p-1 signup-btn bg-custom-primary text-white font-weight-bold"
+                          type="submit"
+                          value="FREE SIGN UP >"
+                        />
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="p-4 bg-white">
+        <div class="d-md-flex justify-content-between align-items-end">
+          <div class="d-md-flex align-items-end">
+            <div class="text-orange">
+              <svg
+                fill="currentColor"
+                version="1.1"
+                height="35"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 396 60"
+                style="enable-background: new 0 0 395.6 60;"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    class="st0"
+                    d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <p class="mt-2 mt-md-0 ml-2 text-xs text-graylight">© 2020 NEWSWEEK DIGITAL LLC</p>
+          </div>
+          <div class="mt-2 mt-md-0 text-lg">
+            <a href="#" class="text-graylight">
+              <i class="mr-2 fab fa-facebook-square"></i>
+            </a>
+            <a href="#" class="text-graylight">
+              <i class="mr-2 fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-graylight">
+              <i class="mr-2 fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-graylight">
+              <i class="mr-2 fab fa-tumblr"></i>
+            </a>
+            <a href="#" class="text-graylight">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        <hr class="mt-3 border-gray" />
+        <div>
+          <div class="d-flex flex-wrap">
+            <strong class="mt-1">Editions:</strong>
+            <a class="footer-links" href="#">U.S. Edition</a>
+            <a class="footer-links" href="#">日本</a>
+            <a class="footer-links" href="#">Pakistan</a>
+            <a class="footer-links" href="#">Polska</a>
+            <a class="footer-links" href="#">România</a>
+          </div>
+          <div class="mx-n2 d-flex flex-wrap">
+            <a class="footer-links" href="#">About Us</a>
+            <a class="footer-links" href="#">Corrections</a>
+            <a class="footer-links" href="#">Contact Us</a>
+            <a class="footer-links" href="#">Editorial Guidelines</a>
+            <a class="footer-links" href="#">Advertise</a>
+            <a class="footer-links" href="#">Copyright</a>
+            <a class="footer-links" href="#">Terms & Conditions</a>
+            <a class="footer-links" href="#">Privacy Policy</a>
+            <a class="footer-links" href="#">Cookie Policy</a>
+            <a class="footer-links" href="#">Terms of Sale</a>
+            <a class="footer-links" href="#">Archive</a>
+            <a class="footer-links" href="#">Announcements</a>
+          </div>
+          <!-- <div class="d-flex mt-2 flex-wrap">
+
+          </div> -->
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
