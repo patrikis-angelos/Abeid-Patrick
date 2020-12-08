@@ -1,3 +1,8 @@
 .hover\:text-decoration-none:hover {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+.hover\:underline-primary:hover {
+  text-decoration: underline;
+  text-decoration-color: $orange;
 }

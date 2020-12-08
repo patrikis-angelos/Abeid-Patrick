@@ -1,0 +1,23 @@
+.card-label {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2px 10px;
+  color: $orange;
+  font-weight: bold;
+}
+
+.card-label-custom {
+  display: inline-block;
+  background-color: $orange;
+  font-weight: bold;
+  padding: 2px 10px;
+  color: white;
+}
+
+.card-label.card-label-secondary {
+  color: #3581f4;
+}
+
+.card-label.card-label-primary {
+  background-color: $orange;
+  color: #fff;
+}
