@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed";
 }
 
 @media (min-width: 1325px) {
@@ -66,9 +66,12 @@ a:hover {
 }
 
 .sticky {
-  position: -webkit-sticky;
   position: sticky;
   top: 60px;
+}
+
+.left-30 {
+  left: 30%;
 }
 
 .bg-custom-primary {
@@ -127,14 +130,25 @@ a:hover {
   border-color: black;
 }
 
+.hover\:text-orange:hover {
+  color: #f72210;
+}
+
+.text-orange {
+  color: #f72210;
+}
+
+.border-orange {
+  border-color: #f72210;
+}
+
 .hover\:text-decoration-none:hover {
   text-decoration: none;
 }
 
 .hover\:underline-primary:hover {
   text-decoration: underline;
-  -webkit-text-decoration-color: #f72210;
-          text-decoration-color: #f72210;
+  text-decoration-color: #f72210;
 }
 
 .w-9 {
@@ -156,7 +170,6 @@ a:hover {
   padding-right: 12px;
   padding-left: 12px;
 }
-
 @media (min-width: 992px) {
   .custom-btn {
     font-size: 16px !important;
@@ -166,8 +179,7 @@ a:hover {
 .custom-input {
   border: 1px solid transparent;
   outline: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   display: block;
   width: 100%;
 }
@@ -175,8 +187,7 @@ a:hover {
 .search-input {
   top: 20%;
   right: 0;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 100px;
 }
 
@@ -191,7 +202,6 @@ a:hover {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
 .custom-header-wrapper > * + * {
   border-left: 1px solid #d9d9d9;
 }
@@ -203,7 +213,6 @@ a:hover {
   line-height: 24px;
   cursor: pointer;
 }
-
 .custom-link:hover {
   text-decoration: none;
 }
@@ -211,9 +220,8 @@ a:hover {
 .custom-header-nav-wrapper {
   padding-right: 160px;
 }
-
 .custom-header-nav-wrapper::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -259,4 +267,5 @@ a:hover {
   color: #f72210;
   text-transform: uppercase;
 }
+
 /*# sourceMappingURL=styles.css.map */
