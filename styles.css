@@ -74,6 +74,15 @@ a:hover {
   left: 50%;
 }
 
+.footer-links {
+  color: #807f84;
+  padding: 0 10px;
+}
+.footer-links:hover {
+  color: black;
+  text-decoration: none;
+}
+
 .bg-custom-primary {
   background-color: #f72210;
 }
