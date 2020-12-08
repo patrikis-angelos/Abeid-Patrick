@@ -170,6 +170,14 @@ p {
   font-weight: bold;
 }
 
+.card-label-custom {
+  display: inline-block;
+  background-color: #f72210;
+  font-weight: bold;
+  padding: 2px 10px;
+  color: white;
+}
+
 .card-label.card-label-secondary {
   color: #3581f4;
 }
