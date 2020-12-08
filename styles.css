@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto Condensed";
+  font-family: 'Roboto Condensed';
 }
 
 @media (min-width: 1325px) {
@@ -19,6 +19,7 @@ p {
 
 a:hover {
   color: black;
+  text-decoration: none;
 }
 
 .card-noborder {
@@ -66,6 +67,7 @@ a:hover {
 }
 
 .sticky {
+  position: -webkit-sticky;
   position: sticky;
   top: 60px;
 }
@@ -76,11 +78,19 @@ a:hover {
 
 .footer-links {
   color: #807f84;
-  padding: 0 10px;
+  padding: 0 8px;
+  margin: 4px 0;
 }
+
 .footer-links:hover {
   color: black;
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .footer-links:not(:first-of-type) {
+    border-left: 1px solid #d9d9d9;
+  }
 }
 
 .bg-custom-primary {
@@ -161,7 +171,8 @@ a:hover {
 
 .hover\:underline-primary:hover {
   text-decoration: underline;
-  text-decoration-color: #f72210;
+  -webkit-text-decoration-color: #f72210;
+          text-decoration-color: #f72210;
 }
 
 .w-9 {
@@ -183,6 +194,7 @@ a:hover {
   padding-right: 12px;
   padding-left: 12px;
 }
+
 @media (min-width: 992px) {
   .custom-btn {
     font-size: 16px !important;
@@ -192,7 +204,8 @@ a:hover {
 .custom-input {
   border: 1px solid transparent;
   outline: none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: block;
   width: 100%;
 }
@@ -200,7 +213,8 @@ a:hover {
 .search-input {
   top: 20%;
   right: 0;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 100px;
 }
 
@@ -215,6 +229,7 @@ a:hover {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 .custom-header-wrapper > * + * {
   border-left: 1px solid #d9d9d9;
 }
@@ -226,6 +241,7 @@ a:hover {
   line-height: 24px;
   cursor: pointer;
 }
+
 .custom-link:hover {
   text-decoration: none;
 }
@@ -233,8 +249,9 @@ a:hover {
 .custom-header-nav-wrapper {
   padding-right: 160px;
 }
+
 .custom-header-nav-wrapper::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -280,5 +297,4 @@ a:hover {
   color: #f72210;
   text-transform: uppercase;
 }
-
 /*# sourceMappingURL=styles.css.map */
