@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# The Next Web home page clone
+# The Newsweek home page clone
 
 A clone of [Newsweek](https://www.newsweek.com/)'s home page. The website is build using the modern `CSS` and `Bootstrap`. I and my pairing partner have extracted `utility classes` as much as possible for their reusability purposes.
 
