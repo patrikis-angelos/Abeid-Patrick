@@ -88,6 +88,14 @@ a:hover {
   }
 }
 
+.width-100 {
+  width: 100%;
+}
+
+.cover {
+  object-fit: cover;
+}
+
 @media (min-width: 768px) {
   .footer-links:not(:first-of-type) {
     border-left: 1px solid $gray;
