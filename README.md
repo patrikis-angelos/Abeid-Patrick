@@ -2,7 +2,7 @@
 
 # The Next Web home page clone
 
-A clone of [NewsWeek](https://www.newsweek.com/)'s home page. The website is build using the modern `css` and `bootstrap`. I and my pairing partner have extracted `utility classes` as much as possible for their reusability purposes.
+A clone of [Newsweek](https://www.newsweek.com/)'s home page. The website is build using the modern `CSS` and `Bootstrap`. I and my pairing partner have extracted `utility classes` as much as possible for their reusability purposes.
 
 The website is fully responsive with the help of three `media query` `breakpoints` (the default being the smaller viewport), namely: `< 768px`, `>= 768px`, `>= 1024px`, `>= 1280px`.
 
@@ -20,9 +20,7 @@ To get a local copy up and running follow these simple example steps.
 
 - `git clone https://github.com/patrick-angelos/Abeid-Patrick`
 - `cd Abeid-Patrick`
-- `git checkout -b Abeid-Patrick`
-- `git pull origin Abeid-Patrick`
-- If you have vscode `live-server` installed, run it and open `localhost:3000`
+- If you have VSCode `live-server` installed, run it and open `localhost:3000`
 
 ## Authors
 
@@ -48,7 +46,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to [NewsWeek](https://newsweek.com/) for their awesome landing page.
+- Hat tip to [Newsweek](https://newsweek.com/) for their awesome landing page.
 - Hat tip to Microverse for their `README` template.
 
 ## 📝 License
